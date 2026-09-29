@@ -1,11 +1,13 @@
+import { useState } from 'react';
 export default function HomePage() {
+    const [query, setQuery] = useState("");
     return (
         <div>
             <header> CollegeFootballFanatics</header>
-            <div> Select Teams</div>
-            <input type ="text" placeholder = "Search Teams"></input>
+            <label>Search Teams</label>
+            <input type="text" onChange={e => setQuery(e.target.value)} />
         </div>
     )
 }
 
-const names: string[] = ["LSU","Oklahoma"];
+
