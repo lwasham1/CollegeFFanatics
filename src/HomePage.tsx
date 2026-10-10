@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import "./styles/homepage.css";
 export default function HomePage() {
     const CollegeTeams: string[] = ["LSU", "OKlahoma", "Alabama", "Ohio State", "TexasTech"];
     const teamChosen:boolean  = false;
@@ -10,9 +11,11 @@ export default function HomePage() {
     );
     return (
         <div>
-            <header> CollegeFootballFanatics</header>
-            <label>Search Teams</label>
+            <header className = "mainHeader"> CollegeFootballFanatics</header>
+            
             <input
+                placeholder = "Search Teams"
+                className = "SearchBar"
                 onChange={(e) => setSearch(e.target.value)}
                 type = "text"
             />
