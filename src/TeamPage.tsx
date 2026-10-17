@@ -1,3 +1,7 @@
 export default function TeamPage(){
-    return null;
+    return (
+        <div>
+            <title>Hello Bitch</title>
+        </div>
+    );
 }
